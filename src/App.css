@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.navbar-title svg {
+  margin-right: 10px;
+}
+
+.navbar-burger {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px; /* Fixed width for buttons */
+}
+
+.menu-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; /* Make buttons fit the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: left;
+}
+
+.menu-button:hover {
+  background-color: #45a049;
+}
+
+.content {
+  display: flex;
+}
+
+.entry-form {
+  width: 25%;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  height: 300px; /* Fixed height */
+  overflow-y: auto; /* Add vertical scroll if content exceeds height */
+}
+
+.entry-form h2 {
+  margin-top: 0;
+}
+
+.entry-form input {
+  width: 80%; /* Adjusted width to fit the container */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.entry-form button {
+  width: 80%; /* Adjusted width to fit the container */
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.entry-form button:hover {
+  background-color: #45a049;
+}
+
+.table-container {
+  width: 75%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.password-header, .password-cell {
+  width: 200px;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.actions-header, .actions-cell {
+  width: 150px;
+  max-width: 150px;
+}
+
+.qr-code-header, .qr-code-cell {
+  width: 80px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.view-button {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.view-button:hover {
+  background-color: #007bb5;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.file-contents-container {
+  margin-top: 20px;
+}
+
+.file-contents-container h2 {
+  margin-bottom: 10px;
+}
+
+.file-contents-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.file-contents-container li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
